@@ -1,0 +1,15 @@
+PREFIX : <http://www.ontotext.com/graphdb/similarity/>
+PREFIX inst: <http://www.ontotext.com/graphdb/similarity/instance/>
+PREFIX pred: <http://www.ontotext.com/graphdb/similarity/psi/>
+insert {
+  inst:embeddings :createIndex "-termweight idf" ;
+    :analyzer "org.apache.lucene.analysis.en.EnglishAnalyzer" ;
+    :documentID ?documentID .
+    ?documentID :documentText ?documentText .
+} where {
+  SELECT ?documentID (GROUP_CONCAT(?texts) as ?documentText) {
+    ?documentID ?p ?texts .
+    filter(isLiteral(?texts))
+  }
+  GROUP BY ?documentID
+}

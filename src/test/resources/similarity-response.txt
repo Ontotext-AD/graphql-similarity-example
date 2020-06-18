@@ -1,0 +1,109 @@
+{
+  "head" : {
+    "vars" : [
+      "documentID",
+      "name",
+      "score",
+      "types"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "score" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#double",
+          "type" : "literal",
+          "value" : "0.1968499844086895"
+        },
+        "types" : {
+          "type" : "literal",
+          "value" : "https://swapi.co/vocabulary/Character|https://swapi.co/vocabulary/Mammal|https://swapi.co/vocabulary/Sentient|https://swapi.co/vocabulary/Togruta"
+        },
+        "name" : {
+          "type" : "literal",
+          "value" : "Shaak Ti"
+        },
+        "documentID" : {
+          "type" : "uri",
+          "value" : "https://swapi.co/resource/togruta/78"
+        }
+      },
+      {
+        "score" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#double",
+          "type" : "literal",
+          "value" : "0.1867921158167348"
+        },
+        "types" : {
+          "type" : "literal",
+          "value" : "https://swapi.co/vocabulary/Character|https://swapi.co/vocabulary/Mammal|https://swapi.co/vocabulary/Sentient|https://swapi.co/vocabulary/Quermian"
+        },
+        "name" : {
+          "type" : "literal",
+          "value" : "Yarael Poof"
+        },
+        "documentID" : {
+          "type" : "uri",
+          "value" : "https://swapi.co/resource/quermian/57"
+        }
+      },
+      {
+        "score" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#double",
+          "type" : "literal",
+          "value" : "0.17500327113959077"
+        },
+        "types" : {
+          "type" : "literal",
+          "value" : "https://swapi.co/vocabulary/Character|https://swapi.co/vocabulary/Mammal|https://swapi.co/vocabulary/Sentient|https://swapi.co/vocabulary/Mirialan"
+        },
+        "name" : {
+          "type" : "literal",
+          "value" : "Luminara Unduli"
+        },
+        "documentID" : {
+          "type" : "uri",
+          "value" : "https://swapi.co/resource/mirialan/64"
+        }
+      },
+      {
+        "score" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#double",
+          "type" : "literal",
+          "value" : "0.17220526237805495"
+        },
+        "types" : {
+          "type" : "literal",
+          "value" : "https://swapi.co/vocabulary/Character|https://swapi.co/vocabulary/Mammal|https://swapi.co/vocabulary/Sentient|https://swapi.co/vocabulary/Human"
+        },
+        "name" : {
+          "type" : "literal",
+          "value" : "Mace Windu"
+        },
+        "documentID" : {
+          "type" : "uri",
+          "value" : "https://swapi.co/resource/human/51"
+        }
+      },
+      {
+        "score" : {
+          "datatype" : "http://www.w3.org/2001/XMLSchema#double",
+          "type" : "literal",
+          "value" : "0.1635149925799165"
+        },
+        "types" : {
+          "type" : "literal",
+          "value" : "https://swapi.co/vocabulary/Character|https://swapi.co/vocabulary/Artificial|https://swapi.co/vocabulary/Sentient|https://swapi.co/vocabulary/Droid"
+        },
+        "name" : {
+          "type" : "literal",
+          "value" : "R4-P17"
+        },
+        "documentID" : {
+          "type" : "uri",
+          "value" : "https://swapi.co/resource/droid/75"
+        }
+      }
+    ]
+  }
+}

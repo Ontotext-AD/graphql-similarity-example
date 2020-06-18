@@ -1,0 +1,58 @@
+{
+  "repositories": {
+    "GET": {
+      "results": {
+        "bindings": [
+          {
+            "readable": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+              "type": "literal",
+              "value": "true"
+            },
+            "id": {
+              "type": "literal",
+              "value": "soaas"
+            },
+            "title": {
+              "type": "literal",
+              "value": "soaas"
+            },
+            "uri": {
+              "type": "uri",
+              "value": "http://localhost:7200/repositories/soaas"
+            },
+            "writable": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+              "type": "literal",
+              "value": "true"
+            }
+          },
+          {
+            "readable": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+              "type": "literal",
+              "value": "true"
+            },
+            "id": {
+              "type": "literal",
+              "value": "automotive"
+            },
+            "title": {
+              "type": "literal",
+              "value": ""
+            },
+            "uri": {
+              "type": "uri",
+              "value": "http://localhost:7200/repositories/automotive"
+            },
+            "writable": {
+              "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+              "type": "literal",
+              "value": "true"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
