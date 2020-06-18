@@ -1,0 +1,20 @@
+PREFIX :<http://www.ontotext.com/graphdb/similarity/>
+PREFIX inst:<http://www.ontotext.com/graphdb/similarity/instance/>
+PREFIX pubo: <http://ontology.ontotext.com/publishing#>
+PREFIX voc: <https://swapi.co/vocabulary/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?documentID ?name ?score (group_concat(?type;separator="|") as ?types)
+{
+  BIND (<${id}> as ?query)
+    ?search     a                 inst:embeddings ;
+                :searchDocumentID ?query;
+                :searchParameters "";
+                :documentResult   ?result .
+    ?result     :value            ?documentID ;
+                :score            ?score.
+    ?documentID a                 voc:Character ;
+                rdfs:label        ?name ;
+                a                 ?type .
+    FILTER (?documentID NOT IN (<${id}>) )
+}
+GROUP BY ?documentID ?name ?score

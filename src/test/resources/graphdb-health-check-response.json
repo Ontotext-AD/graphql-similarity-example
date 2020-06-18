@@ -1,0 +1,43 @@
+{
+  "name": "soaas",
+  "status": "green",
+  "components": [
+    {
+      "name": "read-availability",
+      "status": "green"
+    },
+    {
+      "name": "storage-folder",
+      "status": "green"
+    },
+    {
+      "name": "long-running-queries",
+      "status": "green"
+    },
+    {
+      "name": "predicates-statistics",
+      "status": "green"
+    },
+    {
+      "name": "plugins",
+      "status": "green",
+      "components": [
+        {
+          "name": "elasticsearch-connector",
+          "status": "green",
+          "components": []
+        },
+        {
+          "name": "lucene-connector",
+          "status": "green",
+          "components": []
+        },
+        {
+          "name": "solr-connector",
+          "status": "green",
+          "components": []
+        }
+      ]
+    }
+  ]
+}
